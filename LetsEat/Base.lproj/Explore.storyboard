@@ -68,6 +68,7 @@
                                         <connections>
                                             <outlet property="imgExplore" destination="mPS-MI-n0r" id="hjd-fT-6KZ"/>
                                             <outlet property="nomeLabel" destination="gN2-Rd-Qag" id="jsF-O1-F5x"/>
+                                            <segue destination="wd5-Pd-dNQ" kind="show" id="4Dy-Z8-0my"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -140,6 +141,61 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="k7a-qO-bUv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1186" y="-335"/>
+        </scene>
+        <!--Restaurant List View Controller-->
+        <scene sceneID="RqF-V1-Gdi">
+            <objects>
+                <viewController id="wd5-Pd-dNQ" customClass="RestaurantListViewController" customModule="LetsEat" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fu8-4Z-SKL"/>
+                        <viewControllerLayoutGuide type="bottom" id="aIc-Hl-7Ft"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4AL-ty-BBd">
+                        <rect key="frame" x="0.0" y="64" width="320" height="455"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="z2L-Lh-9bO">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="425"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="pjZ-q3-P4G">
+                                    <size key="itemSize" width="300" height="135"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="restaurantCell" id="RHi-hi-wnf">
+                                        <rect key="frame" x="10" y="0.0" width="300" height="135"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="300" height="135"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </view>
+                                        <color key="backgroundColor" red="0.75814958756345174" green="0.75814958756345174" blue="0.75814958756345174" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="wd5-Pd-dNQ" id="VN9-Jc-f1L"/>
+                                    <outlet property="delegate" destination="wd5-Pd-dNQ" id="85T-fh-wbb"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="z2L-Lh-9bO" firstAttribute="top" secondItem="fu8-4Z-SKL" secondAttribute="bottom" id="8ZF-t1-IzV"/>
+                            <constraint firstItem="aIc-Hl-7Ft" firstAttribute="top" secondItem="z2L-Lh-9bO" secondAttribute="bottom" constant="30" id="nri-nI-nSO"/>
+                            <constraint firstItem="z2L-Lh-9bO" firstAttribute="leading" secondItem="4AL-ty-BBd" secondAttribute="leading" id="rvo-oc-1DJ"/>
+                            <constraint firstAttribute="trailing" secondItem="z2L-Lh-9bO" secondAttribute="trailing" id="uiC-Ee-PT7"/>
+                        </constraints>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <connections>
+                        <outlet property="collectionView" destination="z2L-Lh-9bO" id="A1Z-6A-qtb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dv6-mW-tjr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1185" y="427"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="9UM-cG-rK6">

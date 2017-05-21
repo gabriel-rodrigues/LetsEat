@@ -19,6 +19,7 @@
 		7B905B5E1ED10619001EA2E0 /* ExploreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B905B5D1ED10619001EA2E0 /* ExploreDataManager.swift */; };
 		7B905B601ED106A4001EA2E0 /* ExploreData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7B905B5F1ED106A4001EA2E0 /* ExploreData.plist */; };
 		7BE1785D1ED1140C00BFE8DD /* ExploreCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE1785C1ED1140C00BFE8DD /* ExploreCell.swift */; };
+		7BE178621ED11D3300BFE8DD /* RestaurantListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE178611ED11D3300BFE8DD /* RestaurantListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		7B905B5D1ED10619001EA2E0 /* ExploreDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExploreDataManager.swift; sourceTree = "<group>"; };
 		7B905B5F1ED106A4001EA2E0 /* ExploreData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ExploreData.plist; sourceTree = "<group>"; };
 		7BE1785C1ED1140C00BFE8DD /* ExploreCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExploreCell.swift; sourceTree = "<group>"; };
+		7BE178611ED11D3300BFE8DD /* RestaurantListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantListViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,6 +168,7 @@
 		7B905B511EC95A26001EA2E0 /* Restaurant */ = {
 			isa = PBXGroup;
 			children = (
+				7BE1785E1ED11CEB00BFE8DD /* RestauranteList */,
 			);
 			name = Restaurant;
 			sourceTree = "<group>";
@@ -212,6 +215,30 @@
 				7B905B5D1ED10619001EA2E0 /* ExploreDataManager.swift */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		7BE1785E1ED11CEB00BFE8DD /* RestauranteList */ = {
+			isa = PBXGroup;
+			children = (
+				7BE178601ED11D0C00BFE8DD /* View */,
+				7BE1785F1ED11D0200BFE8DD /* Controller */,
+			);
+			name = RestauranteList;
+			sourceTree = "<group>";
+		};
+		7BE1785F1ED11D0200BFE8DD /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				7BE178611ED11D3300BFE8DD /* RestaurantListViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		7BE178601ED11D0C00BFE8DD /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -291,6 +318,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7BE1785D1ED1140C00BFE8DD /* ExploreCell.swift in Sources */,
+				7BE178621ED11D3300BFE8DD /* RestaurantListViewController.swift in Sources */,
 				7B905B581ED0FC66001EA2E0 /* ExploreViewController.swift in Sources */,
 				7B905B5E1ED10619001EA2E0 /* ExploreDataManager.swift in Sources */,
 				7B2FBDF61EC943F400ADBF7B /* AppDelegate.swift in Sources */,
