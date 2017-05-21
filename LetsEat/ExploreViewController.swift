@@ -33,4 +33,8 @@ class ExploreViewController: UIViewController, UICollectionViewDataSource {
         
         return cell
     }
+    
+    @IBAction func unwindLocationCancel(segue: UIStoryboardSegue) {
+        
+    }
 }
