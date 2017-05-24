@@ -10,13 +10,16 @@
 import UIKit
 
 
-class ExploreDataManager {
+class ExploreDataManager : DataManagerProtocol {
     
     fileprivate var items:[ExploreItem] = []
     
+    let fileName: String = "ExploreData"
+    
+    
     func fetch() {
         
-        for data in loadData() {
+        for data in self.load() {
             items.append(ExploreItem(dict: data))
         }
     }
@@ -28,15 +31,5 @@ class ExploreDataManager {
     func explore(at index: IndexPath) -> ExploreItem {
         return items[index.item]
     }
-    
-    
-    fileprivate func loadData() -> [[String: AnyObject]] {
-        
-        guard let path = Bundle.main.path(forResource: "ExploreData", ofType: "plist"), let items = NSArray(contentsOfFile: path)  else {
-            return [[:]]
-        }
-        
-        return items as! [[String: AnyObject]]
-        
-    }
+
 }

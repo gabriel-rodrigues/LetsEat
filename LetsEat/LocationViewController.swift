@@ -8,7 +8,7 @@
 
 import UIKit
 
-class LocationViewController: UIViewController, UITableViewDataSource {
+class LocationViewController: UIViewController {
 
     @IBOutlet var tableView: UITableView!
     let manager = LocationDataManager()
@@ -19,7 +19,11 @@ class LocationViewController: UIViewController, UITableViewDataSource {
 
         manager.fetch()
     }
+    
+}
 
+
+extension LocationViewController : UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return manager.numberOfItems()
@@ -32,5 +36,4 @@ class LocationViewController: UIViewController, UITableViewDataSource {
         
         return cell
     }
-    
 }

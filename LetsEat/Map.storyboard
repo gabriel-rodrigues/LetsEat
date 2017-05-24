@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ItI-1S-lOd">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -12,7 +16,6 @@
                     <tabBarItem key="tabBarItem" title="MAP" image="icon-map-off" selectedImage="icon-map-on" id="eTJ-Ij-TIc"/>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4_7.fullscreen"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="d88-69-DLJ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -26,10 +29,10 @@
             </objects>
             <point key="canvasLocation" x="189.59999999999999" y="319.79010494752629"/>
         </scene>
-        <!--View Controller-->
+        <!--Map View Controller-->
         <scene sceneID="JEl-3M-7E5">
             <objects>
-                <viewController id="Nyw-mx-iNq" sceneMemberID="viewController">
+                <viewController id="Nyw-mx-iNq" customClass="MapViewController" customModule="LetsEat" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="YuC-Jb-2xI"/>
                         <viewControllerLayoutGuide type="bottom" id="WvM-io-wGA"/>
@@ -97,10 +100,22 @@
                             </constraints>
                         </view>
                     </navigationItem>
+                    <connections>
+                        <outlet property="mapView" destination="XS8-ef-mA5" id="siL-zk-dnh"/>
+                        <segue destination="qoW-on-vNS" kind="show" identifier="showDetail" id="glo-9Q-tNy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O7k-cd-4wS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1185" y="320"/>
+        </scene>
+        <!--RestaurantDetail-->
+        <scene sceneID="vwa-7r-fVy">
+            <objects>
+                <viewControllerPlaceholder storyboardName="RestaurantDetail" id="qoW-on-vNS" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="P0C-ga-VJv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1184" y="864"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="RPN-vE-1HR">

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ExploreViewController: UIViewController, UICollectionViewDataSource {
+class ExploreViewController: UIViewController {
     
     @IBOutlet var collectionView: UICollectionView!
     let manage = ExploreDataManager()
@@ -18,6 +18,15 @@ class ExploreViewController: UIViewController, UICollectionViewDataSource {
         
         manage.fetch()
     }
+
+    
+    @IBAction func unwindLocationCancel(segue: UIStoryboardSegue) {
+        
+    }
+}
+
+
+extension ExploreViewController : UICollectionViewDataSource {
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return manage.numberOfItems()
@@ -32,9 +41,5 @@ class ExploreViewController: UIViewController, UICollectionViewDataSource {
         cell.setup(with: manage.explore(at: indexPath))
         
         return cell
-    }
-    
-    @IBAction func unwindLocationCancel(segue: UIStoryboardSegue) {
-        
     }
 }

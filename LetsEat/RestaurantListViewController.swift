@@ -8,16 +8,21 @@
 
 import UIKit
 
-class RestaurantListViewController: UIViewController, UICollectionViewDataSource {
+class RestaurantListViewController: UIViewController {
     
     @IBOutlet var collectionView: UICollectionView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
 
+    
+    
+}
+
+
+extension RestaurantListViewController : UICollectionViewDataSource {
+    
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
     }
@@ -32,5 +37,4 @@ class RestaurantListViewController: UIViewController, UICollectionViewDataSource
         
         return cell
     }
-    
 }

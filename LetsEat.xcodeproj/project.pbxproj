@@ -12,6 +12,15 @@
 		7B2FBE001EC943F400ADBF7B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B2FBDFE1EC943F400ADBF7B /* LaunchScreen.storyboard */; };
 		7B2FBE0A1EC9469E00ADBF7B /* assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B2FBE091EC9469E00ADBF7B /* assets.xcassets */; };
 		7B2FBE0D1EC956C900ADBF7B /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B2FBE0C1EC956C900ADBF7B /* MapKit.framework */; };
+		7B73B16C1ED516F40060E31E /* RestaurantAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B73B16B1ED516F40060E31E /* RestaurantAnnotation.swift */; };
+		7B73B16E1ED51B6E0060E31E /* MapDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B73B16D1ED51B6E0060E31E /* MapDataManager.swift */; };
+		7B73B1701ED51D7C0060E31E /* MapLocations.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7B73B16F1ED51D7C0060E31E /* MapLocations.plist */; };
+		7B73B1731ED51E130060E31E /* DataManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B73B1721ED51E130060E31E /* DataManagerProtocol.swift */; };
+		7B73B1751ED522300060E31E /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B73B1741ED522300060E31E /* MapViewController.swift */; };
+		7B73B1781ED5B6A90060E31E /* RestaurantDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B73B1761ED5B6A90060E31E /* RestaurantDetail.storyboard */; };
+		7B73B17A1ED5B8610060E31E /* Segue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B73B1791ED5B8610060E31E /* Segue.swift */; };
+		7B73B17C1ED5B9720060E31E /* RestaurantItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B73B17B1ED5B9720060E31E /* RestaurantItem.swift */; };
+		7B73B1801ED5BC800060E31E /* RestaurantDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B73B17F1ED5BC800060E31E /* RestaurantDetailTableViewController.swift */; };
 		7B905B451EC958A1001EA2E0 /* Explore.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B905B431EC958A1001EA2E0 /* Explore.storyboard */; };
 		7B905B471EC95906001EA2E0 /* Map.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B905B461EC95906001EA2E0 /* Map.storyboard */; };
 		7B905B581ED0FC66001EA2E0 /* ExploreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B905B571ED0FC66001EA2E0 /* ExploreViewController.swift */; };
@@ -33,6 +42,15 @@
 		7B2FBE011EC943F400ADBF7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7B2FBE091EC9469E00ADBF7B /* assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = assets.xcassets; sourceTree = "<group>"; };
 		7B2FBE0C1EC956C900ADBF7B /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		7B73B16B1ED516F40060E31E /* RestaurantAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantAnnotation.swift; sourceTree = "<group>"; };
+		7B73B16D1ED51B6E0060E31E /* MapDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapDataManager.swift; sourceTree = "<group>"; };
+		7B73B16F1ED51D7C0060E31E /* MapLocations.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = MapLocations.plist; sourceTree = "<group>"; };
+		7B73B1721ED51E130060E31E /* DataManagerProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManagerProtocol.swift; sourceTree = "<group>"; };
+		7B73B1741ED522300060E31E /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		7B73B1771ED5B6A90060E31E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/RestaurantDetail.storyboard; sourceTree = "<group>"; };
+		7B73B1791ED5B8610060E31E /* Segue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Segue.swift; sourceTree = "<group>"; };
+		7B73B17B1ED5B9720060E31E /* RestaurantItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantItem.swift; sourceTree = "<group>"; };
+		7B73B17F1ED5BC800060E31E /* RestaurantDetailTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantDetailTableViewController.swift; sourceTree = "<group>"; };
 		7B905B441EC958A1001EA2E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Explore.storyboard; sourceTree = "<group>"; };
 		7B905B461EC95906001EA2E0 /* Map.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Map.storyboard; sourceTree = "<group>"; };
 		7B905B571ED0FC66001EA2E0 /* ExploreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExploreViewController.swift; sourceTree = "<group>"; };
@@ -92,6 +110,50 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		7B73B1691ED515FD0060E31E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				7B73B1741ED522300060E31E /* MapViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		7B73B16A1ED516040060E31E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7B73B16F1ED51D7C0060E31E /* MapLocations.plist */,
+				7B73B16B1ED516F40060E31E /* RestaurantAnnotation.swift */,
+				7B73B16D1ED51B6E0060E31E /* MapDataManager.swift */,
+				7B73B17B1ED5B9720060E31E /* RestaurantItem.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		7B73B1711ED51DE80060E31E /* Misc */ = {
+			isa = PBXGroup;
+			children = (
+				7B73B1721ED51E130060E31E /* DataManagerProtocol.swift */,
+				7B73B1791ED5B8610060E31E /* Segue.swift */,
+			);
+			name = Misc;
+			sourceTree = "<group>";
+		};
+		7B73B17D1ED5BC400060E31E /* RestaurantDetail */ = {
+			isa = PBXGroup;
+			children = (
+				7B73B17E1ED5BC4B0060E31E /* Controller */,
+			);
+			name = RestaurantDetail;
+			sourceTree = "<group>";
+		};
+		7B73B17E1ED5BC4B0060E31E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				7B73B17F1ED5BC800060E31E /* RestaurantDetailTableViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
 		7B905B481EC95978001EA2E0 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
@@ -123,6 +185,7 @@
 				7B2FBDF91EC943F400ADBF7B /* Main.storyboard */,
 				7B905B461EC95906001EA2E0 /* Map.storyboard */,
 				7B905B431EC958A1001EA2E0 /* Explore.storyboard */,
+				7B73B1761ED5B6A90060E31E /* RestaurantDetail.storyboard */,
 				7B2FBDFE1EC943F400ADBF7B /* LaunchScreen.storyboard */,
 			);
 			name = Storyboard;
@@ -139,6 +202,7 @@
 		7B905B4C1EC959C5001EA2E0 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				7B73B1711ED51DE80060E31E /* Misc */,
 			);
 			name = Common;
 			sourceTree = "<group>";
@@ -170,6 +234,8 @@
 		7B905B501EC95A21001EA2E0 /* Map */ = {
 			isa = PBXGroup;
 			children = (
+				7B73B16A1ED516040060E31E /* Model */,
+				7B73B1691ED515FD0060E31E /* Controller */,
 			);
 			name = Map;
 			sourceTree = "<group>";
@@ -177,6 +243,7 @@
 		7B905B511EC95A26001EA2E0 /* Restaurant */ = {
 			isa = PBXGroup;
 			children = (
+				7B73B17D1ED5BC400060E31E /* RestaurantDetail */,
 				7BE1785E1ED11CEB00BFE8DD /* RestauranteList */,
 			);
 			name = Restaurant;
@@ -340,6 +407,8 @@
 				7B2FBDFB1EC943F400ADBF7B /* Main.storyboard in Resources */,
 				7BE178691ED133E300BFE8DD /* Locations.plist in Resources */,
 				7B905B601ED106A4001EA2E0 /* ExploreData.plist in Resources */,
+				7B73B1701ED51D7C0060E31E /* MapLocations.plist in Resources */,
+				7B73B1781ED5B6A90060E31E /* RestaurantDetail.storyboard in Resources */,
 				7B2FBE0A1EC9469E00ADBF7B /* assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -352,13 +421,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				7BE178671ED12F6B00BFE8DD /* LocationViewController.swift in Sources */,
+				7B73B16C1ED516F40060E31E /* RestaurantAnnotation.swift in Sources */,
 				7BE1785D1ED1140C00BFE8DD /* ExploreCell.swift in Sources */,
+				7B73B1731ED51E130060E31E /* DataManagerProtocol.swift in Sources */,
+				7B73B17A1ED5B8610060E31E /* Segue.swift in Sources */,
 				7BE1786B1ED1355100BFE8DD /* LocationDataManager.swift in Sources */,
+				7B73B16E1ED51B6E0060E31E /* MapDataManager.swift in Sources */,
 				7BE178621ED11D3300BFE8DD /* RestaurantListViewController.swift in Sources */,
+				7B73B1751ED522300060E31E /* MapViewController.swift in Sources */,
 				7B905B581ED0FC66001EA2E0 /* ExploreViewController.swift in Sources */,
 				7B905B5E1ED10619001EA2E0 /* ExploreDataManager.swift in Sources */,
+				7B73B17C1ED5B9720060E31E /* RestaurantItem.swift in Sources */,
 				7B2FBDF61EC943F400ADBF7B /* AppDelegate.swift in Sources */,
 				7B905B5C1ED1060D001EA2E0 /* ExploreItem.swift in Sources */,
+				7B73B1801ED5BC800060E31E /* RestaurantDetailTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -379,6 +455,14 @@
 				7B2FBDFF1EC943F400ADBF7B /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		7B73B1761ED5B6A90060E31E /* RestaurantDetail.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7B73B1771ED5B6A90060E31E /* Base */,
+			);
+			name = RestaurantDetail.storyboard;
 			sourceTree = "<group>";
 		};
 		7B905B431EC958A1001EA2E0 /* Explore.storyboard */ = {
