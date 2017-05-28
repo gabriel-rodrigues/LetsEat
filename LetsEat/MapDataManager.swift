@@ -26,7 +26,7 @@ class MapDataManager : DataManagerProtocol {
             self.items.removeAll()
         }
         
-        for data in self.load() {
+        for data in RestaurantAPIManager.loadJSON(file: "Chicago") {
             self.items.append(RestaurantAnnotation(dicionario: data))
         }
         

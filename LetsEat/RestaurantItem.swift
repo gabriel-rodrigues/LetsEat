@@ -19,6 +19,9 @@ struct RestaurantItem {
     var longitude: Float?
     var latitude: Float?
     var cuisines: [String] = []
+    var image: String?
+    var restaurantId: Int?
+    var data: [String: AnyObject]?
     
     var cuisine: String? {
         if cuisines.isEmpty {
@@ -34,18 +37,29 @@ struct RestaurantItem {
         
     }
     
+    var annotation: RestaurantAnnotation {
+        
+        guard let restaurantData = data else {
+            return RestaurantAnnotation(dicionario: [:])
+        }
+        
+        return RestaurantAnnotation(dicionario: restaurantData)
+    }
+    
 }
 
 
 extension RestaurantItem {
     
     init (dict: [String:AnyObject]) {
-        name    = dict["name"] as? String
-        city    = dict["city"] as? String
-        address = dict["address"] as? String
-        price   = dict["price"] as? Int
-        longitude = dict["lng"] as? Float
-        latitude  = dict["lat"] as? Float
+        
+        name         = dict["name"] as? String
+        city         = dict["city"] as? String
+        address      = dict["address"] as? String
+        price        = dict["price"] as? Int
+        longitude    = dict["lng"] as? Float
+        latitude     = dict["lat"] as? Float
+        restaurantId = dict["id"] as? Int
         
         if let cuisines = dict["cuisines"] as? [AnyObject] {
             for data in cuisines {
@@ -54,5 +68,8 @@ extension RestaurantItem {
                 }
             }
         }
+        
+        image = dict["image"] as? String
+        data  = dict
     }
 }

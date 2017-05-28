@@ -83,7 +83,7 @@
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bhv-tS-gk6">
                                     <rect key="frame" x="0.0" y="0.0" width="118" height="33"/>
                                     <connections>
-                                        <segue destination="4Jf-9F-QoB" kind="presentation" id="fd0-OU-HT8"/>
+                                        <segue destination="4Jf-9F-QoB" kind="presentation" identifier="locationList" id="fd0-OU-HT8"/>
                                     </connections>
                                 </button>
                             </subviews>

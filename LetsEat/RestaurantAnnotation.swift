@@ -36,8 +36,12 @@ class RestaurantAnnotation: NSObject, MKAnnotation {
             self.name = name
         }
         
-        if let cuisines = dicionario["cuisines"] as? [String] {
-            self.cuisines = cuisines
+        if let cuisines = dicionario["cuisines"] as? [AnyObject] {
+            for data in cuisines {
+                if let cuisine = data["cuisine"] as? String {
+                    self.cuisines.append(cuisine)
+                }
+            }
         }
         
         if let address = dicionario["address"] as? String {

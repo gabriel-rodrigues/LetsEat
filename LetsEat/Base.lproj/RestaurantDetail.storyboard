@@ -314,6 +314,19 @@
                     </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="addressLabel" destination="A52-Tu-Cnt" id="AUn-jD-qgU"/>
+                        <outlet property="cuisineLabel" destination="GhI-1O-UH9" id="mZ8-Mg-AvB"/>
+                        <outlet property="headerAddressLabel" destination="zqH-TG-cWv" id="Sv8-dc-gBz"/>
+                        <outlet property="imgRating" destination="ueS-OA-UAx" id="wam-9c-MOa"/>
+                        <outlet property="mapView" destination="eeF-Ek-wfC" id="FCi-nm-3Kk"/>
+                        <outlet property="noReviewsContainer" destination="vsB-EU-Tqg" id="Hmp-BU-lT9"/>
+                        <outlet property="nomeLabel" destination="btd-fi-qzf" id="Vwe-O1-1zv"/>
+                        <outlet property="reviewsContainer" destination="atS-Wh-AhT" id="Vyb-we-GR0"/>
+                        <outlet property="tableDetailsLabel" destination="SdV-Ug-cyx" id="APl-kF-8O8"/>
+                        <outlet property="txtReview" destination="dQI-5s-HUj" id="FdZ-Bt-zOj"/>
+                        <outlet property="userLabel" destination="GqF-UN-tBZ" id="AHE-Gx-EZb"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="roX-Hm-DRe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

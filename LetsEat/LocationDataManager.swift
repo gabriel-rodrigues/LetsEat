@@ -13,6 +13,7 @@ class LocationDataManager {
     
     private var locations: [String] = []
     
+    typealias FindTuple = (isFound: Bool, position: Int)
     
     func fetch() {
         
@@ -36,5 +37,15 @@ class LocationDataManager {
         }
         
         return items as! [String]
+    }
+    
+    
+    func findLocation(by name: String) -> FindTuple  {
+        
+        guard let index = locations.index(of: name) else {
+            return  FindTuple(isFound: false, position: 0)
+        }
+        
+        return FindTuple(isFound: true, position: index)
     }
 }
