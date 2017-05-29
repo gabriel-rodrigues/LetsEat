@@ -13,4 +13,5 @@ enum Segue: String {
     case showDetail
     case restaurantList
     case locationList
+    case applyFilter
 }
