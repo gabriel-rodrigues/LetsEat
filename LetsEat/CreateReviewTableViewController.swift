@@ -99,8 +99,8 @@ class CreateReviewTableViewController: UITableViewController {
     
     @IBAction func unwindFilterSave(segue: UIStoryboardSegue) {
         
-        if segue.source is ApplyFilterViewController {
-            if let thumbnail = thumbnail {
+        if let viewController = segue.source as? ApplyFilterViewController {
+            if let thumbnail = viewController.imgExample?.image {
                 btnThumbnail.setImage(thumbnail, for: .normal)
             }
         }
