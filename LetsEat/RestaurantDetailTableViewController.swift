@@ -25,12 +25,33 @@ class RestaurantDetailTableViewController: UITableViewController {
     @IBOutlet var noReviewsContainer: UIView!
     
     var selectedRestaurant: RestaurantItem?
+    let manager = ReviewDataManager()
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.initialize()
     }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        self.checkReviews()
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if let identifier = segue.identifier {
+            switch identifier {
+            case Segue.showReview.rawValue:
+                self.showReview(segue: segue)
+            case Segue.showAllReviews.rawValue:
+                self.showAllReviews(segue: segue)
+            default:
+                print("Segue not added")
+            }
+        }
+    }
+    
     
     func initialize() {
         self.setupLabels()
@@ -53,6 +74,41 @@ class RestaurantDetailTableViewController: UITableViewController {
         
         self.mapView.setRegion(region, animated: true)
         self.mapView.addAnnotation(annotation)
+    }
+    
+    func showReview(segue: UIStoryboardSegue) {
+        
+        if let viewController = segue.destination as? CreateReviewTableViewController {
+            viewController.selectedRestaurantID = selectedRestaurant?.restaurantId
+        }
+    }
+    
+    func showAllReviews(segue: UIStoryboardSegue) {
+        
+        if let viewController = segue.destination as? ReviewListViewController {
+            viewController.selectedRestaurantId = selectedRestaurant?.restaurantId
+        }
+    }
+    
+    func checkReviews() {
+        
+        if let id = selectedRestaurant?.restaurantId {
+            manager.fetchReview(by: id)
+        }
+        
+        let count = manager.numberOfItems()
+        
+        if count > 0 {
+            noReviewsContainer.isHidden = true
+        }
+        
+        let item = manager.getLatestReview()
+        userLabel.text = item.name
+        txtReview.text = item.customerReview
+        
+        if let rating = item.rating {
+            imgRating.image = UIImage(named: Rating.image(rating: rating))
+        }
     }
     
     func setupLabels() {
