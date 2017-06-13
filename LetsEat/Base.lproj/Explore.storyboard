@@ -39,7 +39,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="177" height="154"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mPS-MI-n0r">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mPS-MI-n0r">
                                                     <rect key="frame" x="0.0" y="0.0" width="177" height="130"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="130" id="5bx-Cm-X98"/>
@@ -59,6 +59,7 @@
                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="trailing" secondItem="mPS-MI-n0r" secondAttribute="trailing" id="80m-hE-PoR"/>
+                                            <constraint firstAttribute="trailing" secondItem="mPS-MI-n0r" secondAttribute="trailing" id="BHb-JE-cJv"/>
                                             <constraint firstItem="gN2-Rd-Qag" firstAttribute="top" secondItem="mPS-MI-n0r" secondAttribute="bottom" constant="5" id="Tlf-zK-hH9"/>
                                             <constraint firstItem="gN2-Rd-Qag" firstAttribute="leading" secondItem="1d5-pV-SD7" secondAttribute="leading" constant="8" id="WIH-Ue-RvM"/>
                                             <constraint firstItem="mPS-MI-n0r" firstAttribute="leading" secondItem="1d5-pV-SD7" secondAttribute="leading" id="aqH-gX-TdA"/>

@@ -17,11 +17,13 @@ class ExploreViewController: UIViewController {
     let manage = ExploreDataManager()
     
     var selectedCity: String?
+    
+    fileprivate let minItemSpacing: CGFloat = 7
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        manage.fetch()
+        self.initilize()
     }
     
     
@@ -35,6 +37,26 @@ class ExploreViewController: UIViewController {
         default:
             print("Segue not added")
         }
+    }
+    
+    func initilize() {
+        
+        manage.fetch()
+        
+        if Device.isPad {
+            setupCollectionView()
+        }
+    }
+    
+    func setupCollectionView() {
+        
+        let flow = UICollectionViewFlowLayout()
+        
+        flow.sectionInset            = UIEdgeInsets(top: 7, left: 7, bottom: 7, right: 7)
+        flow.minimumInteritemSpacing = 0
+        flow.minimumLineSpacing      = 7
+        
+        self.collectionView?.collectionViewLayout = flow
     }
     
     override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
@@ -91,6 +113,11 @@ class ExploreViewController: UIViewController {
                      completion: nil)
     }
     
+    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+        
+        self.collectionView.reloadData()
+    }
+    
     
     @IBAction func unwindLocationCancel(segue: UIStoryboardSegue) {
         
@@ -108,6 +135,32 @@ class ExploreViewController: UIViewController {
     }
 }
 
+
+extension ExploreViewController : UICollectionViewDelegateFlowLayout {
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        
+        if Device.isPad {
+            
+            let factor = traitCollection.horizontalSizeClass == .compact ? 2 : 3
+            
+            let screenRect  = collectionView.frame.size.width
+            let screenWidth = screenRect - (CGFloat(minItemSpacing) * CGFloat(factor + 1))
+            let cellwidth   = screenWidth / CGFloat(factor)
+            
+            return CGSize(width: cellwidth, height: 154)
+        }
+        
+        else {
+            
+            let screenRect  = collectionView.frame.size.width
+            let screenWidth = screenRect - 21
+            let cellWidth   = screenWidth / 2.0
+            
+            return CGSize(width: cellWidth, height: 154)
+        }
+    }
+}
 
 extension ExploreViewController : UICollectionViewDataSource {
     

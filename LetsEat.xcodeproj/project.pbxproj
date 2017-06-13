@@ -26,6 +26,7 @@
 		7B356A7E1EE37E0E00D97367 /* StarRatingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B356A7D1EE37E0E00D97367 /* StarRatingViewController.swift */; };
 		7B356A821EE38AE700D97367 /* ReviewListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B356A811EE38AE700D97367 /* ReviewListViewController.swift */; };
 		7B356A841EE38BFE00D97367 /* ReviewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B356A831EE38BFE00D97367 /* ReviewTableViewCell.swift */; };
+		7B64568F1EEF6F4700DB6C50 /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B64568E1EEF6F4700DB6C50 /* Device.swift */; };
 		7B73B16C1ED516F40060E31E /* RestaurantAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B73B16B1ED516F40060E31E /* RestaurantAnnotation.swift */; };
 		7B73B16E1ED51B6E0060E31E /* MapDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B73B16D1ED51B6E0060E31E /* MapDataManager.swift */; };
 		7B73B1701ED51D7C0060E31E /* MapLocations.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7B73B16F1ED51D7C0060E31E /* MapLocations.plist */; };
@@ -88,6 +89,7 @@
 		7B356A7D1EE37E0E00D97367 /* StarRatingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StarRatingViewController.swift; sourceTree = "<group>"; };
 		7B356A811EE38AE700D97367 /* ReviewListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewListViewController.swift; sourceTree = "<group>"; };
 		7B356A831EE38BFE00D97367 /* ReviewTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewTableViewCell.swift; sourceTree = "<group>"; };
+		7B64568E1EEF6F4700DB6C50 /* Device.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
 		7B73B16B1ED516F40060E31E /* RestaurantAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantAnnotation.swift; sourceTree = "<group>"; };
 		7B73B16D1ED51B6E0060E31E /* MapDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapDataManager.swift; sourceTree = "<group>"; };
 		7B73B16F1ED51D7C0060E31E /* MapLocations.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = MapLocations.plist; sourceTree = "<group>"; };
@@ -273,6 +275,7 @@
 				7B73B1721ED51E130060E31E /* DataManagerProtocol.swift */,
 				7B73B1791ED5B8610060E31E /* Segue.swift */,
 				7BC3AA001ED5C6C3008F6B94 /* RestaurantAPIManager.swift */,
+				7B64568E1EEF6F4700DB6C50 /* Device.swift */,
 			);
 			name = Misc;
 			sourceTree = "<group>";
@@ -621,6 +624,7 @@
 				7BE178671ED12F6B00BFE8DD /* LocationViewController.swift in Sources */,
 				7B356A7E1EE37E0E00D97367 /* StarRatingViewController.swift in Sources */,
 				7B73B16C1ED516F40060E31E /* RestaurantAnnotation.swift in Sources */,
+				7B64568F1EEF6F4700DB6C50 /* Device.swift in Sources */,
 				7B004B481EDB79F00096542C /* ImageFiltering.swift in Sources */,
 				7B356A7A1EE37B7900D97367 /* RatingView.swift in Sources */,
 				7BE1785D1ED1140C00BFE8DD /* ExploreCell.swift in Sources */,
