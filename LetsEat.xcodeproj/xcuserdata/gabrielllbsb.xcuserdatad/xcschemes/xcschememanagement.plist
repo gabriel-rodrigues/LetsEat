@@ -9,10 +9,35 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>LetsEatDataKit.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+		<key>MessageApp.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>7B2FBDF11EC943F400ADBF7B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>7BCC36921EF0C8600085FCAA</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>7BCC36AC1EF0CBD80085FCAA</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>7BCC36B41EF0CBD80085FCAA</key>
 		<dict>
 			<key>primary</key>
 			<true/>

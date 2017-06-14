@@ -9,21 +9,21 @@
 import Foundation
 
 
-struct RestaurantItem {
+public struct RestaurantItem {
     
-    var name: String?
-    var city: String?
-    var address: String?
-    var price: Int?
-    var state: String?
-    var longitude: Float?
-    var latitude: Float?
-    var cuisines: [String] = []
-    var image: String?
-    var restaurantId: Int?
-    var data: [String: AnyObject]?
+    public var name: String?
+    public var city: String?
+    public var address: String?
+    public var price: Int?
+    public var state: String?
+    public var longitude: Float?
+    public var latitude: Float?
+    public var cuisines: [String] = []
+    public var image: String?
+    public var restaurantId: Int?
+    public var data: [String: AnyObject]?
     
-    var cuisine: String? {
+    public var cuisine: String? {
         if cuisines.isEmpty {
             return ""
         }
@@ -37,7 +37,7 @@ struct RestaurantItem {
         
     }
     
-    var annotation: RestaurantAnnotation {
+    public var annotation: RestaurantAnnotation {
         
         guard let restaurantData = data else {
             return RestaurantAnnotation(dicionario: [:])
@@ -51,7 +51,7 @@ struct RestaurantItem {
 
 extension RestaurantItem {
     
-    init (dict: [String:AnyObject]) {
+    public init (dict: [String:AnyObject]) {
         
         name         = dict["name"] as? String
         city         = dict["city"] as? String

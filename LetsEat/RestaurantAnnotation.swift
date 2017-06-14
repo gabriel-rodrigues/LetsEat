@@ -9,20 +9,20 @@
 import UIKit
 import MapKit
 
-class RestaurantAnnotation: NSObject, MKAnnotation {
+public class RestaurantAnnotation: NSObject, MKAnnotation {
 
-    var name: String?
-    var cuisines: [String] = []
-    var latitude: Double?
-    var longitude: Double?
-    var address: String?
-    var postalCode:String?
-    var state:String?
-    var imagemURL: String?
-    var data: [String: AnyObject]?
+    public var name: String?
+    public var cuisines: [String] = []
+    public var latitude: Double?
+    public var longitude: Double?
+    public var address: String?
+    public var postalCode:String?
+    public var state:String?
+    public var imagemURL: String?
+    public var data: [String: AnyObject]?
     
     
-    init(dicionario: [String: AnyObject]) {
+    public init(dicionario: [String: AnyObject]) {
         
         if let lat = dicionario["lat"] as? Double {
             self.latitude = lat
@@ -63,11 +63,11 @@ class RestaurantAnnotation: NSObject, MKAnnotation {
         self.data = dicionario
     }
     
-    var title: String? {
+    public var title: String? {
         return name
     }
     
-    var subtitle: String? {
+    public var subtitle: String? {
         
         if cuisines.isEmpty {
             return ""
@@ -82,7 +82,7 @@ class RestaurantAnnotation: NSObject, MKAnnotation {
         
     }
     
-    var coordinate: CLLocationCoordinate2D {
+    public var coordinate: CLLocationCoordinate2D {
         
         guard let lat = latitude, let long = longitude else {
             return CLLocationCoordinate2D()
@@ -91,7 +91,7 @@ class RestaurantAnnotation: NSObject, MKAnnotation {
         return CLLocationCoordinate2D(latitude: lat, longitude: long)
     }
     
-    var restautantItem: RestaurantItem {
+    public var restautantItem: RestaurantItem {
         
         guard let restaurantData = self.data else {
             return RestaurantItem()

@@ -9,12 +9,12 @@
 import Foundation
 
 
-class RestaurantDataManager {
+public class RestaurantDataManager {
     
     private var items: [RestaurantItem] = []
     
     
-    func fetch (by location: String, withFilter: String = "All", completationHandler: () -> Void) {
+    public func fetch (by location: String, withFilter: String = "All", completationHandler: () -> Void) {
         
         var restaurants: [RestaurantItem] = []
         
@@ -36,13 +36,17 @@ class RestaurantDataManager {
         
     }
     
-    func numberOfItems() -> Int {
+    public func numberOfItems() -> Int {
         
         return items.count
     }
     
-    func restaurantItem(at index: IndexPath) -> RestaurantItem {
+    public func restaurantItem(at index: IndexPath) -> RestaurantItem {
         
         return items[index.item]
+    }
+    
+    public init () {
+        
     }
 }
